@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+
+
+    <!-- css output file -->
+     <link rel="stylesheet" href="./output.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+
+     <!-- short icon -->
+    <link rel="shortcut icon" href="../images/logo youtube.png">
+
+    
+     
+     <script src="./script.js" defer></script>
+
+     <!-- swiper -->
+      <!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
+      <script src="swiper-bundle.min.js" defer ></script>
+
+</head>
+<body class="dark:bg-black dark:text-white ">
+    
+    <header class="fixed w-full h-20 top-0 left-0 z-10 bg-white dark:bg-black pt-2">
+
+        <nav class="flex items-center justify-between mx-4">
+
+            <div class="flex items-center md:gap-10 ">
+
+                <button class="btn-menu"><i class="ri-menu-line text-3xl hidden md:block"></i></button>
+
+                <div class="logo md:flex items-center gap-2   ">
+                    <i class="ri-youtube-fill text-4xl text-red-500"></i>
+                    <h2 class="text-2xl hidden md:block">YouTube</h2>
+                </div>
+
+
+
+            </div>
+
+            <div class="search flex items-center gap-4">
+                <div class="search-bar flex items-center gap-0">
+                    <input type="text" placeholder="Search" class="border border-slate-300 dark:border-slate-900 dark:bg-slate-700 h-10 px-2 rounded-tl-[20px] rounded-bl-[20px] w-[100px] outline-none md:w-[400px]  ">
+                    <button class="bg-slate-100 dark:bg-slate-800 rounded-br-[20px] rounded-tr-[20px] w-20 h-10  border border-slate-300 dark:border-slate-900 border-l-0"><i class="ri-search-line text-2xl "></i></button>
+                </div>
+                <button class="bg-slate-100 rounded-full dark:bg-slate-800 w-12 h-12 hidden md:block">
+                    <i class="ri-mic-line text-2xl"></i>
+                </button>
+            </div>
+
+            <div class="darkmodebtn flex items-center gap-4 ">
+                <button class="btndarkmode">
+                    <i class="ri-moon-line text-2xl darkmode"></i>
+                </button>
+                <figure class="w-10 h-10 rounded-full overflow-hidden">
+                    <img src="../images/user.jpg" alt="user" class="">
+                </figure>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main class="pt-[60px] w-full relative flex mt-5 flex-col-reverse md:flex-row">
+
+        <section class=" max-w-full  lg:w-fit sidebar-container  md:h-[90vh] md:overflow-y-scroll pt-4">
+
+            <div class="sidebar h-full md:mx-1">
+
+                <div class="border-b-2 bg-slate-200 md:bg-transparent md:border-slate-500 flex justify-evenly md:flex-col items-center">
+                    
+                    <div class="sidebar-item  dark:hover:bg-slate-800 ">
+                        <i class="ri-home-4-line"></i>
+                        <p>Home</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-vidicon-line"></i>
+                        <p>Short</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-tv-2-line"></i>
+                        <p>Subscriptions</p>
+                    </div>
+
+                </div>
+
+                <div class="border-b-2 border-slate-500 hidden md:block ">
+                    <div class="sidebar-item">
+                        <h3>You</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-history-line"></i>
+                        <p>History</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-play-list-2-fill"></i>
+                        <p>PlayList</p>                   
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-graduation-cap-line"></i>
+                        <p>Your Courses</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-time-line"></i>
+                        <p>Watch Later</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-thumb-up-line"></i>
+                        <p>liked Video</p>
+                    </div>
+
+                </div>
+
+                <div class="border-b-2 border-slate-500 hidden md:block">
+
+                    <div class="sidebar-item">
+                        <h3>Explore</h3>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-fire-line"></i>
+                        <p>Trending</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-music-ai-line"></i>
+                        <p>MusiC</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-rss-line"></i>
+                        <p>Live</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-gamepad-line"></i>
+                        <p>Gaming</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-football-line"></i>
+                        <p>Sports</p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="border-b-2 border-slate-500 hidden md:block">
+
+                    <div class="sidebar-item">
+                        <i class="ri-settings-5-line"></i>
+                        <p>setting</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-flag-line"></i>
+                        <p>Report History</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-question-line"></i>
+                        <p>Help</p>
+                    </div>
+
+                    <div class="sidebar-item">
+                        <i class="ri-feedback-line"></i>
+                        <p>Send Feedback</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="w-fit max-w-3/4 mx-4 relative">
+
+            <div class="w-full swiper mySwiper ">
+                <div class=" w-full max-w-1/4 option-youtube flex gap-4 fixed  z-10 bg-white dark:bg-black dark:text-white  swiper-wrapper overflow-x-scroll">
+                    <button class="active swiper-slide">All</button>
+                    <button class="swiper-slide">Music</button>
+                    <button class="swiper-slide">JavaScript</button>
+                    <button class="swiper-slide">React.Js</button>
+                    <button class="swiper-slide">TypeScript</button>
+                    <button class="swiper-slide">Podcast</button>
+                    <button class="swiper-slide">Trend</button>
+                    <button class="swiper-slide">Live</button>
+                    <button class="swiper-slide">Frontend</button>
+                    <button class="swiper-slide">Ahmed Khttab</button>
+                    <button class="swiper-slide">Games</button>
+                    <button class="swiper-slide">Football</button>
+                    <button class="swiper-slide">Sport</button>
+                    <button class="swiper-slide">RealMadrid</button>
+                    <button class="swiper-slide">History</button>
+
+                    <button class="swiper-slide">Ahmed Khttab</button>
+                    <button class="swiper-slide">Games</button>
+                    <button class="swiper-slide">Football</button>
+                    <button class="swiper-slide">Sport</button>
+                    <button class="swiper-slide">RealMadrid</button>
+                    <button class="swiper-slide">History</button>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="card-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  mt-20 gap-4  overflow-y-scroll h-[70vh] md:h-[80vh]">
+
+                <div class="card relative ">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/frontend1.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">17:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full ">
+                        <div class="w-20  overflow-hidden">
+                            <img src="../images/frontend-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Frontend Developer</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">800K views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/frontend2.png" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">17:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20  overflow-hidden">
+                            <img src="../images/frontend-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Frontend Developer</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">800K views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/frontend3.png" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">17:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20  overflow-hidden">
+                            <img src="../images/frontend-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Frontend Developer</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">800K views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/frontend3.webp" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">17:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20  overflow-hidden">
+                            <img src="../images/frontend-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Frontend Developer</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">800K views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/realmadrid-banner.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">6:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full gap-2">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/realmadrid-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">64M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/realmadrid-banner-2.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">2:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/realmadrid-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">14M views</p>
+                                <p>:</p>
+                                <p>12 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/realmadrid-banner-3.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">1:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/realmadrid-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">4M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/cairokee-banner.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">1:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/cairokee-icon" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">4M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/cairokee-banner2.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">1:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/cairokee-icon" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">4M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/cairokee-banner3.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">1:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/cairokee-icon" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">4M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/cairokee-banner4.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">1:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/cairokee-icon" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">4M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card relative gap-2">
+                    <figure class="relative rounded-lg overflow-hidden">
+                        <img src="../images/shackira-banner.jpg" alt="real" class="w-full">
+                        <div class="absolute bottom-2 right-2 text-white bg-black opacity-85 px-[3px] rounded-md flex items-center justify-center h-[20px]">
+                            <p class="">1:30</p>
+                        </div>
+                    </figure>
+
+                    <div class="content flex mt-2 w-full">
+                        <div class="w-20 h-20 rounded-full overflow-hidden">
+                            <img src="../images/shackira-icon.jpg" alt="icon-madrid" class="w-full rounded-full">
+                        </div>
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel!</p>
+                            <p class="text-gray-500 mt-2">Real Madrid</p>
+                            <div class=" flex gap-2 text-gray-500">
+                                <p class="">4M views</p>
+                                <p>:</p>
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-item{
+    @apply flex md:gap-4 px-2 py-4 cursor-pointer w-full mx-0 rounded-lg overflow-hidden items-center  justify-center md:justify-start;
+}
+
+.sidebar-item:hover{
+    @apply bg-slate-100 dark:bg-slate-800 ;
+}
+
+.sidebar h3{
+   @apply text-2xl font-bold;
+}
+
+.sidebar-item p{
+    @apply hidden lg:block lg:text-2xl;
+}
+
+.sidebar-item i{
+    @apply text-2xl;
+}
+
+.option-youtube button{
+    @apply px-4  bg-gray-200  w-[100%] text-xl rounded-md text-nowrap h-[35px] dark:bg-slate-700 dark:text-white;
+}
+
+button.active{
+    @apply bg-black text-white dark:bg-slate-950;
+}
+
+.content{
+    @apply gap-2;
+}
